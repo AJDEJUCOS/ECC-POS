@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D5D3CF;
+    color: #1c1b1a;
+    margin: 100;
+    padding: 100;
+}
+b {
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item-container button {
+    color: #eeeeee;
+    font-weight: normal;
+    background-color: #3e6045;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.total-container button {
+    color: #EEEEEE;
+    background-color: #3e6045;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    width: 45px;
+    font-weight: bold;
+    margin-left: 220px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.total-container button:hover {
+    background-color: #1c1b1a;
+}
+button:hover {
+    background-color: #1c1b1a;
+}
+.container {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 5px 5px 5px 5px;
+}
+.menu-container, .ordered-items-container {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.422);
+    margin-top: 50px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #ececec;
+}
+.menu-title, .ordered-items-title {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #3e6045;
+    text-indent: 10px;
+    border: 1px solid #ececec;
+    border-radius: 5px 5px 0px 0px;
+}
+.menu-title {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ordered-items-title {
+    color: #fffefe;
+}
+.menu-container {
+    margin-right: 15px;
+}
+.menu-items {
+    font-size: 5px;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #ececec;
+    
+}
+.menu-container .item-container {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.492);
+    display: inline-block; /* Display items horizontally */
+    margin: 10px 10px 10px 10px; /* Add spacing between items */
+    padding: 0px;
+    border-radius: 5px 5px 5px 5px;
+}
+.menu-container .item-container img {  
+    border-radius: 5px 5px 0px 0px;
+}
+.menu-container .item-container input[type="number"]{
+    text-indent: 5px;
+    border: 1px solid #3e6045;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    height: 25px;
+}
+.total-container input[type="number"] {
+    text-indent: 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
+    height: 25px;
+}
+.total-container {
+    color: #1c1b1a;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.ordered-items-container .total-container{
+    border: 1px solid #ececec;
+}
+.order-card {
+    background-color: #D5D3CF;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+p {
+    color: #1c1b1a;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-indent: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #1c1b1a;
+    margin-left: 145px;
+}
+.order-card button {
+    background-color: #3e6045;
+    border: none;
+    border-radius: 8px;
+    color: #fffefe;
+    margin-left: 5px; /* Adjust as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-card button:hover {
+    background-color: #1c1b1a; /* Change color on hover */
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="assets/img/favicon.png" type="">
+<title>El Centro Cafe - Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu-container">
+            <div class="menu-title">EL CENTRO MENU</div>
+            <div class="menu-items">
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f1.png" alt="Purple Haze" width="100%">
+                        <h4><b>Purple Haze</b><br><b>₱129</b></h4>
+                    </div>
+                    <input type="number" id="Purple Haze-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('Purple Haze', 399, 'Purple Haze-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f2.png" alt="Stawberry" width="100%">
+                        <h4><b>Stawberry</b><br><b>₱129</b></h4>
+                    </div>
+                    <input type="number" id="Stawberry-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('Stawberry', 199, 'Stawberry-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f3.png" alt="Nrthrn Lights" width="100%">
+                        <h4><b>Nrthrn Lights</b><br><b>₱129</b></h4>
+                    </div>
+                    <input type="number" id="Nrthrn Lights-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('Nrthrn Lights', 299, 'Nrthrn Lights-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f5.png" alt="Acplco Gold" width="100%">
+                        <h4><b>Acplco Gold</b><br><b>₱139</b></h4>
+                    </div>
+                    <input type="number" id="Acplco Gold-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('Acplco Gold', 89, 'Acplco Gold-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f7.png" alt="Cookie Mnchr" width="100%">
+                        <h4><b>Cookie Mnchr</b><br><b>₱49</b></h4>
+                    </div>
+                    <input type="number" id="Cookie Mnchr-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('Cookie Mnchr', 179, 'Cookie Mnchr-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f8.png" alt="Lucy & D Sky" width="100%">
+                        <h4><b>Lucy & D Sky</b><br><b>₱99</b></h4>
+                    </div>
+                    <input type="number" id="Lucy & D Sky-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('Lucy & D Sky', 159, 'Lucy & D Sky-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f9.png" alt="Snoops Drm" width="100%">
+                        <h4><b>Snoops Drm</b><br><b>₱49</b></h4>
+                    </div>
+                    <input type="number" id="Snoop's Drm-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('Snoops Drm', 159, 'Snoops Drm-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f10.png" alt="Double CM" width="100%">
+                        <h4><b>Double CM</b><br><b>₱99</b></h4>
+                    </div>
+                    <input type="number" id="Double CM-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('Double CM', 169, 'Double CM-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f11.png" alt="P-Pistachio" width="100%">
+                        <h4><b>P-Pistachio</b><br><b>₱99</b></h4>
+                    </div>
+                    <input type="number" id="P-Pistachio-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('P-Pistachio', 159, 'P-Pistachio-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="assets/img/f12.png" alt="White Widow" width="100%">
+                        <h4><b>White Widow
+                        </b><br><b>₱99</b></h4>
+                    </div>
+                    <input type="number" id="White Widow-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('White Widow', 159, 'White Widow-quantity')">Add to order</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="ordered-items-container">
+            <div class="ordered-items-title">Ordered Items</div>
+            <div class="ordered-item-container" id="order-details">
+                <!-- Cards will be added here dynamically -->
+            </div>
+            <div class="total-container">
+                <div>
+                    <b>Total:</b> <span id="total"></span><br>
+                    <input type="number" id="customer-cash" placeholder="Enter cash amount here"><br>
+                    <button onclick="calculateChange()">Pay!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
